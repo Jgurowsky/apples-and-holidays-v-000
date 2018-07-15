@@ -71,7 +71,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |seasons, holiday_hashes|
     holiday_hashes.collect do |holiday, supply_list|
       if supply_list.include?("BBQ")
-        holiday.flatten
+        holiday
       end
     end
   end
